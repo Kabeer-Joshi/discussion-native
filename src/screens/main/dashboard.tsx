@@ -8,6 +8,7 @@ import {
   Button
 } from 'react-native-paper';
 import { CommonActions } from '@react-navigation/native';
+import { StackScreenWrapper } from '../../components/layout/wrappers/StackScreenWrapper';
 
 const DashboardScreen = ({ navigation } : any) => {
   const classes = [
@@ -36,18 +37,17 @@ const DashboardScreen = ({ navigation } : any) => {
   };
 
   return (
-    <View style={styles.container}>
-      <Appbar.Header>
-        <Appbar.Content title="Dashboard" />
-        <Appbar.Action icon="logout" onPress={handleLogout} />
-      </Appbar.Header>
+    <StackScreenWrapper
+      title='Dashboard :)'
+      showBack={false}
+      scrollable={false}
+    >
 
-      <Surface style={styles.content}>
         {classes.map(classItem => (
           <Card
-            key={classItem.id}
-            style={styles.classCard}
-            onPress={() => openClassContent(classItem)}
+          key={classItem.id}
+          style={styles.classCard}
+          onPress={() => openClassContent(classItem)}
           >
             <Card.Content>
               <Text variant="titleLarge">{classItem.name}</Text>
@@ -60,8 +60,8 @@ const DashboardScreen = ({ navigation } : any) => {
             </Card.Actions>
           </Card>
         ))}
-      </Surface>
-    </View>
+        </StackScreenWrapper>
+      
   );
 };
 

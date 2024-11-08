@@ -107,6 +107,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   contentPadding: {
-    padding: 4,
+    padding: 8,
   },
 });
