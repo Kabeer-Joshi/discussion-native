@@ -1,7 +1,6 @@
 // HomeScreen.tsx - Example usage
 import React from 'react';
 import { Button, Text, Card, ActivityIndicator, MD2Colors, Checkbox, Chip, DataTable, Portal, Dialog, Divider, FAB, Banner, List, ProgressBar, MD3Colors, TextInput } from 'react-native-paper';
-import { ScreenWrapper } from '../../components/layout/screen-wrapper';
 import { Image, ScrollView, StyleSheet, View } from 'react-native';
 
 const HomeScreen = () => {

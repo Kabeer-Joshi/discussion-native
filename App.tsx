@@ -11,13 +11,9 @@ const theme = {
   ...MD3LightTheme,
   colors: {
     ...MD3LightTheme.colors,
-    primary: '#6200ee',
-    secondary: '#9B51E0',
-    background: '#FFFFFF',
+    background: '#FFFFFF',  // or whatever color you want as your app background
     surface: '#FFFFFF',
-    text: '#000000',
-    onBackground: '#000000',
-    onSurface: '#000000',
+    // ... other colors
   },
 };
 
